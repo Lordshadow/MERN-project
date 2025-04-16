@@ -1,0 +1,11 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, rgba(18, 18, 18, 0.9), rgba(0, 191, 255, 0.537));
+    color: #a8a8a8; /* Set the default text color to a light gray */
+  }
+  
+  /* Optional: Reset box-sizing */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }

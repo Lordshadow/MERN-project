@@ -1,0 +1,158 @@
+/* CartPage.css */
+
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  min-height: 100vh; /* Ensure the page takes up at least the full viewport height */
+  margin-bottom: 70px; /* Margin to prevent footer overlap */
+  box-sizing: border-box;
+}
+
+.cart-box {
+  width: 90%;
+  max-width: 800px; /* Increased max-width for larger screens */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Slightly more rounded corners */
+  padding: 20px;
+  margin-bottom: 20px; /* Add margin below the cart box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.cart-box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+
+.cart-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Darker heading color */
+  font-size: 24px; /* Increased font size for heading */
+  border-bottom: 2px solid #eee; /* Add a subtle border below heading */
+  padding-bottom: 10px; /* Add padding below the border */
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space out image and details */
+  padding: 15px;
+  border-bottom: 1px solid #eee; /* Lighter border color */
+  margin-bottom: 15px; /* Add margin below each item */
+}
+
+/* Last cart item should not have bottom border */
+.cart-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.cart-item-image {
+  width: 100px; /* Increased image size */
+  height: auto;
+  border-radius: 8px; /* Rounded corners for images */
+  margin-right: 20px; /* Increased margin */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Subtle shadow for images */
+}
+
+.cart-item-details {
+  flex: 1; /* Allow details to take up remaining space */
+}
+
+.cart-item-details h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #2c3e50; /* Darker text for product name */
+  font-size: 18px; /* Increased font size */
+}
+
+.cart-item-details p {
+  margin-bottom: 5px;
+  color: #7f8c8d; /* More muted color for price and quantity */
+}
+
+.cart-total {
+  text-align: right;
+  margin-top: 20px; /* Increased margin */
+  font-size: 20px; /* Increased font size for total */
+  color: #e74c3c; /* A more vibrant color for the total price */
+  font-weight: bold; /* Make the total price bold */
+}
+
+.order-button-container {
+  text-align: center; /* Center the button */
+  margin-top: 30px; /* Increased margin */
+}
+
+
+.order-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 12px 25px; /* Slightly increased padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; /* Increased font size for button */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+.order-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+.order-button:active {
+  background-color: #388e3c;
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Smaller shadow on active */
+}
+
+
+/* Styles for empty cart message */
+.cart-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3498db; /* Blue color for empty cart heading */
+}
+
+.cart-page p {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.cart-page a {
+  color: #0078d7;
+  text-decoration: none;
+}
+
+.cart-page a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+.remove-button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: auto;
+  align-self: center;
+  transition: background-color 0.2s ease;
+}
+
+.remove-button:hover {
+  background-color: #d9363e;
+}

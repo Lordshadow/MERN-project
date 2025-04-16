@@ -1,0 +1,101 @@
+
+
+.keyboard-page,
+.mouse-page,
+.gamepad-page,
+.mousepad-page,
+.microphone-page,
+.headphone-page,
+.monitor-page,
+.laptop-page,  /* Added laptop-page */
+.prebuiltpc-page { /* Added prebuiltpc-page */
+  padding: 20px;
+  text-align: center;
+}
+
+.keyboard-page h2,
+.mouse-page h2,
+.gamepad-page h2,
+.mousepad-page h2,
+.microphone-page h2,
+.headphone-page h2,
+.monitor-page h2,
+.laptop-page h2,  /* Added laptop-page h2 */
+.prebuiltpc-page h2 { /* Added prebuiltpc-page h2 */
+  margin-bottom: 20px;
+}
+
+.keyboard-grid,
+.mouse-grid,
+.gamepad-grid,
+.mousepad-grid,
+.microphone-grid,
+.headphone-grid,
+.monitor-grid,
+.laptop-grid,  /* Added laptop-grid */
+.prebuiltpc-grid { /* Added prebuiltpc-grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.keyboard-card,
+.mouse-card,
+.gamepad-card,
+.mousepad-card,
+.microphone-card,
+.headphone-card,
+.monitor-card,
+.laptop-card,  /* Added laptop-card */
+.prebuiltpc-card { /* Added prebuiltpc-card */
+  background-color: #101820;
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s ease;
+  border: 2px solid #00c9ff;
+}
+
+.keyboard-card:hover,
+.mouse-card:hover,
+.gamepad-card:hover,
+.mousepad-card:hover,
+.microphone-card:hover,
+.headphone-card:hover,
+.monitor-card:hover,
+.laptop-card:hover,  /* Added laptop-card:hover */
+.prebuiltpc-card:hover { /* Added prebuiltpc-card:hover */
+  transform: scale(1.05);
+}
+
+.keyboard-card img,
+.mouse-card img,
+.gamepad-card img,
+.mousepad-card img,
+.microphone-card img,
+.headphone-card img,
+.monitor-card img,
+.laptop-card img,  /* Added laptop-card img */
+.prebuiltpc-card img { /* Added prebuiltpc-card img */
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  background: white;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.keyboard-card h3,
+.mouse-card h3,
+.gamepad-card h3,
+.mousepad-card h3,
+.microphone-card h3,
+.headphone-card h3,
+.monitor-card h3,
+.laptop-card h3,  /* Added laptop-card h3 */
+.prebuiltpc-card h3 { /* Added prebuiltpc-card h3 */
+  margin-top: 12px;
+  font-size: 1.1rem;
+}

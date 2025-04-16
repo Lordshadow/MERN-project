@@ -1,0 +1,130 @@
+/* src/components/Navbar.css */
+
+/* General Navbar Styles */
+.navbar {
+    background-color: #121212;
+    color: #a8a8a8;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar Container Styles */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 20px;
+  }
+  
+  /* Logo Styles */
+  .logo-img {
+    height: 50px;
+  }
+  
+  /* Search Bar Styles */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-grow: 1;
+    margin: 0 20px;
+    background-color: #1a1a1a;
+  }
+  
+  .search-bar input {
+    padding: 10px 12px;
+    border: none;
+    flex-grow: 1;
+    background-color: transparent;
+    color: #a8a8a8;
+  }
+  
+  .search-button {
+    background-color: #00bfff;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Navbar Links Styles */
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar-links a {
+    color: #a8a8a8;
+    text-decoration: none;
+    padding: 10px 12px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #00bfff;
+  }
+  
+  /* Navbar Bottom Styles */
+  .navbar-bottom {
+    display: flex;
+    justify-content: center; /* Center the main nav links */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 20px;
+    border-top: 1px solid #282828;
+  }
+  
+  /* Main Nav Links Styles */
+  .main-nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-nav-links li {
+    margin: 0 20px;
+  }
+  
+  .main-nav-links a {
+    color: #a8a8a8;
+    text-decoration: none;
+    padding: 10px 12px;
+    transition: color 0.3s;
+  }
+  
+  .main-nav-links a:hover {
+    color: #00bfff;
+  }
+  
+  /* Responsive Styles (Adjust as needed) */
+  @media (max-width: 768px) {
+    .navbar-links, .search-bar {
+      display: none;
+    }
+  
+    .navbar-toggle {
+      display: flex;
+    }
+  
+    .main-nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .main-nav-links li {
+      margin: 0;
+      padding: 10px 0;
+      width: 100%;
+    }
+  }

@@ -1,0 +1,164 @@
+/* src/components/Navbar.css */
+
+/* General Navbar Styles */
+.navbar {
+  background-color: #021524;
+  color: #a8a8a8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  font-family: 'Arial', sans-serif;
+  position: relative; /* Add relative positioning to navbar */
+  z-index: 100; /* Ensure navbar is above other content */
+}
+
+/* Navbar Container Styles */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 20px;
+}
+
+/* Logo Styles */
+.logo-img {
+  height: 50px;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #333;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-grow: 1;
+  margin: 0 20px;
+  background-color: #08374c;
+}
+
+.search-bar input {
+  padding: 10px 12px;
+  border: none;
+  flex-grow: 1;
+  background-color: transparent;
+  color: #a8a8a8;
+}
+
+.search-button {
+  background-color: #00bfff;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Navbar Links Styles */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: #a8a8a8;
+  text-decoration: none;
+  padding: 10px 12px;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #00bfff;
+}
+
+/* Navbar Bottom Styles */
+.navbar-bottom {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 20px;
+  border-top: 1px solid #282828;
+  position: relative; /* Add relative positioning to navbar-bottom */
+}
+
+/* Browse Categories Trigger Styles */
+.browse-categories-trigger {
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  color: #00bfff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.browse-categories-trigger.active {
+  background-color: #00bfff;
+  color: white;
+}
+
+/* Browse Categories Styles */
+.browse-categories {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position below the navbar-bottom */
+  left: 20px; /* Align with the left padding */
+  background-color:#08374c;
+  padding: 1rem 20px;
+  width: 250px;
+  z-index: 99; /* Lower z-index than navbar */
+  border: 1px solid #333;
+}
+
+.browse-categories.active {
+  display: block;
+}
+
+.categories-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categories-list li {
+  margin-bottom: 5px;
+}
+
+.categories-list a {
+  color: #a8a8a8;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.categories-list a:hover {
+  background-color: #282828;
+  color: #00bfff;
+}
+
+/* Responsive Styles (Adjust as needed) */
+@media (max-width: 768px) {
+  .navbar-links, .search-bar {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .browse-categories {
+    width: 100%;
+  }
+
+  .navbar-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

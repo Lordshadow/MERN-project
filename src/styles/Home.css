@@ -1,0 +1,202 @@
+/* src/pages/Home.css */
+
+.home-page {
+    font-family: 'Arial', sans-serif;
+    color: #a8a8a8;
+    background: linear-gradient(135deg, rgba(18, 18, 18, 0.9), rgba(0, 191, 255, 0.537)); /* Light gradient background */
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    background-image: url('images/hero-bg.jpg'); /* Replace with your hero background image */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .shop-now-btn {
+    background-color: #00bfff;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Add this line to remove underline */
+  }
+  
+  .shop-now-btn:hover {
+    background-color: #0099cc;
+  }
+  
+  /* Featured Products Section Styles */
+  .featured-products,
+  .categories,
+  .why-choose-us,
+  .testimonials,
+  .newsletter-signup {
+    padding: 4rem 20px;
+    text-align: center;
+  }
+  
+  .featured-products h2,
+  .categories h2,
+  .why-choose-us h2,
+  .testimonials h2,
+  .newsletter-signup h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #00bfff;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .product-card {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .view-product-btn {
+    background-color: #00bfff;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Add this line to remove underline */
+  }
+  
+  .view-product-btn:hover {
+    background-color: #0099cc;
+  }
+  
+  /* Categories Section Styles */
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .category-card {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .category-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .category-card a {
+    text-decoration: none; /* Remove underline from category links */
+    color: inherit; /* Inherit the color from the parent */
+  }
+  
+  /* Why Choose Us Section Styles */
+  .why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .why-choose-card {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .why-choose-card i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #00bfff;
+  }
+  
+  /* Testimonials Section Styles */
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .testimonial-card {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  /* Newsletter Signup Section Styles */
+  .newsletter-signup input {
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin-right: 1rem;
+    background-color: #1a1a1a;
+    color: #a8a8a8;
+  }
+  
+  .newsletter-signup button {
+    background-color: #00bfff;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .newsletter-signup button:hover {
+    background-color: #0099cc;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero {
+      height: 400px;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  }

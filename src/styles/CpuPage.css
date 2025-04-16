@@ -1,0 +1,40 @@
+.cpu-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cpu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .cpu-card {
+    background-color: #101820;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease;
+    border: 2px solid #00c9ff;
+  }
+  
+  .cpu-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .cpu-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+    padding: 8px;
+  }
+  
+  .cpu-card h3 {
+    margin-top: 12px;
+    font-size: 1.1rem;
+  }
+  
